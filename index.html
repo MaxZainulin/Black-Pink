@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <title>Black Pink</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#" onclick="reloadPage()"
+              >Apparel<img class="nav__svg" src="img/Vector.svg" alt="Vector"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" onclick="reloadPage()"
+              >Music<img class="nav__svg" src="img/Vector.svg" alt="Vector"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" onclick="reloadPage()"
+              >Collections<img
+                class="nav__svg"
+                src="img/Vector.svg"
+                alt="Vector"
+            /></a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#" onclick="reloadPage()"
+              >Accessories<img
+                class="nav__svg"
+                src="img/Vector.svg"
+                alt="Vector"
+            /></a>
+          </li>
+        </ul>
+        <img src="img/logo.png" class="nav__logo" id="logo" />
+      </nav>
+    </header>
+
+    <div class="block">
+      <div class="block__bg">
+        <div class="block--container">
+          <img
+            src="img/фотография Лисы для первого экрана.png"
+            alt=""
+            class="block__img"
+          />
+          <div class="block-item">
+            <div class="block-item__title">
+              Borem ipsum dolor sit <br />
+              amet, consectetur <br />
+              adipiscing elit.
+            </div>
+            <div class="block-item__subtitle">
+              Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis. Class
+              aptent taciti sociosqu ad litora torquent per conubia nostra, per
+              inceptos himenaeos.
+            </div>
+            <a href="https://www.google.com/">
+              <button class="block-item__btn">Horem</button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-marketing">
+      <div class="block-marketing container-img">
+        <div class="block-marketing__item">
+          <div class="block-marketing__title">
+            Borem ipsum dolor sit <br />
+            amet, consectetur <br />
+            adipiscing elit.
+          </div>
+          <div class="block-marketing__subtitle">
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+            <br />
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </div>
+        </div>
+        <img src="img/реклама.jpg" alt="" class="block__img" />
+      </div>
+    </div>
+
+    <div class="block-info">
+      <div class="block-info container">
+        <img src="img/Frame 7.png" alt="" class="block__img" />
+        <div class="block-info__item">
+          <div class="block-info__title">
+            Borem ipsum dolor sit <br />
+            amet, consectetur <br />
+            adipiscing elit.
+          </div>
+          <div class="block-info__subtitle">
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+            <br />
+            Porem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+            vulputate libero et velit interdum, ac aliquet odio mattis. Class
+            aptent taciti sociosqu ad litora torquent per conubia nostra, per
+            inceptos himenaeos.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="block-sale">
+      <div class="block-sale__bg">
+        <h1>Porem ipsum dolor sit amet, consectetur</h1>
+        <div class="card">
+          <div class="card-discount">
+            <div class="card-discount__title">Discount!</div>
+            <div class="card-discount__price">
+              <span class="card-discount__original-price">₱ 3.980</span> <br />
+              <span class="card-discount__discounted-price">₱ 1.990</span>
+            </div>
+          </div>
+          <div class="card-title">Porem ipsum</div>
+          <div class="card-input__name">
+            <label for="name">Name</label>
+            <input type="text" />
+          </div>
+          <div class="card-input__phone">
+            <label for="phone">Phone</label>
+            <input type="number" />
+          </div>
+          <button
+            class="card-btn"
+            onclick="window.location.href = 'https://www.google.com';"
+          >
+            Porem Ipsum
+          </button>
+          <div class="card-sale-info">
+            <p>Скидка действительна до <span id="discount-date"></span></p>
+            <p class="card-sale__timer">
+              Закончится через: <span id="countdown"></span>
+            </p>
+          </div>
+        </div>
+        <img src="img/фото лисы слева.png" alt="" class="card-girl--left" />
+        <img src="img/фото лисы справа.png" alt="" class="card-girl-right" />
+      </div>
+    </div>
+
+    <div class="social-links">
+      <img
+        src="/img/Blackpink born pink.png"
+        alt=""
+        class="social-links__img"
+      />
+      <div class="social-links__item">
+        <ul>
+          <li>
+            <a href=""><img src="img/facebook.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/twitter.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/Vectorinst.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/Vectoryoutube.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/Vectorapple.svg" alt="" /></a>
+          </li>
+          <li>
+            <a href=""><img src="img/Vectorspotify.svg" alt="" /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="copyright">Ⓒ 2023 BLACKPINK | SHOP. All Rights Reserved.</div>
+      <ul class="help-links">
+        <li class="link"><a href="#">Help</a></li>
+        <li class="link"><a href="#">Terms</a></li>
+        <li class="link"><a href="#">Privacy</a></li>
+        <li class="link">
+          <a href="#">Do Not Sell My Personal Information</a>
+        </li>
+        <li class="link"><a href="#">Cookie Choices</a></li>
+      </ul>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-content container">
+        <div class="footer-left">
+          <p class="discount-text">DISCOUNT</p>
+          <p class="low-price">For the low price of ₱1.990</p>
+        </div>
+        <div class="footer-center">
+          <img
+            src="img/средство для похудения.png"
+            alt="Center Image"
+            class="center-image"
+          />
+        </div>
+        <div class="footer-right">
+          <a href="https://www.google.com/">
+            <button class="order-button">Order Now</button>
+          </a>
+
+          <a href=""
+            ><img class="footer-svg" src="/img/крестVector.svg" alt=""
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="/js/myScript.js"></script>
+  </body>
+</html>
