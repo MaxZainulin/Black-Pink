@@ -14,34 +14,44 @@
   <body>
     <header>
       <nav class="nav">
-        <ul class="nav__links">
-          <li class="nav__item">
-            <a class="nav__link" href="#" onclick="reloadPage()"
-              >Apparel<img class="nav__svg" src="img/Vector.svg" alt="Vector"
-            /></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#" onclick="reloadPage()"
-              >Music<img class="nav__svg" src="img/Vector.svg" alt="Vector"
-            /></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#" onclick="reloadPage()"
-              >Collections<img
-                class="nav__svg"
-                src="img/Vector.svg"
-                alt="Vector"
-            /></a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="#" onclick="reloadPage()"
-              >Accessories<img
-                class="nav__svg"
-                src="img/Vector.svg"
-                alt="Vector"
-            /></a>
-          </li>
-        </ul>
+        <div class="burger-menu">
+          <div class="burger-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </div>
+          <ul class="nav__links">
+            <ul class="nav__links">
+              <li class="nav__item">
+                <a class="nav__link" href="#" onclick="reloadPage()"
+                  >Apparel<img
+                    class="nav__svg"
+                    src="img/Vector.svg"
+                    alt="Vector"
+                /></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#" onclick="reloadPage()"
+                  >Music<img class="nav__svg" src="img/Vector.svg" alt="Vector"
+                /></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#" onclick="reloadPage()"
+                  >Collections<img
+                    class="nav__svg"
+                    src="img/Vector.svg"
+                    alt="Vector"
+                /></a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#" onclick="reloadPage()"
+                  >Accessories</a
+                >
+              </li>
+            </ul>
+          </ul>
+        </div>
+
         <img src="img/logo.png" class="nav__logo" id="logo" />
       </nav>
     </header>
@@ -76,7 +86,7 @@
 
     <div class="block-marketing">
       <div class="block-marketing container-img">
-        <div class="block-marketing__item">
+        <div class="block-marketing__item container-text">
           <div class="block-marketing__title">
             Borem ipsum dolor sit <br />
             amet, consectetur <br />
@@ -94,14 +104,14 @@
             inceptos himenaeos.
           </div>
         </div>
-        <img src="img/реклама.jpg" alt="" class="block__img" />
+        <img src="img/реклама.jpg" alt="" class="block-marketing__img" />
       </div>
     </div>
 
     <div class="block-info">
       <div class="block-info container">
-        <img src="img/Frame 7.png" alt="" class="block__img" />
-        <div class="block-info__item">
+        <img src="img/Frame 7.png" alt="" class="block-info__img" />
+        <div class="block-info__item container-text">
           <div class="block-info__title">
             Borem ipsum dolor sit <br />
             amet, consectetur <br />
@@ -149,10 +159,16 @@
             Porem Ipsum
           </button>
           <div class="card-sale-info">
-            <p>Скидка действительна до <span id="discount-date"></span></p>
-            <p class="card-sale__timer">
-              Закончится через: <span id="countdown"></span>
+            <p>
+              Скидка <br />
+              действительна <br />
+              до <span id="discount-date"></span>
             </p>
+            <p class="card-sale__timer">
+              Закончится через: <br />
+              <span id="countdown"></span>
+            </p>
+            <img src="img/320mob.png" alt="" class="card-mobile__img" />
           </div>
         </div>
         <img src="img/фото лисы слева.png" alt="" class="card-girl--left" />
@@ -161,11 +177,7 @@
     </div>
 
     <div class="social-links">
-      <img
-        src="img/Blackpink born pink.png"
-        alt=""
-        class="social-links__img"
-      />
+      <img src="img/Blackpink born pink.png" alt="" class="social-links__img" />
       <div class="social-links__item">
         <ul>
           <li>
@@ -205,7 +217,13 @@
       <div class="footer-content container">
         <div class="footer-left">
           <p class="discount-text">DISCOUNT</p>
-          <p class="low-price">For the low price of ₱1.990</p>
+          <p class="low-price">
+            For the low price of ₱1.990
+            <span class="low-price-mobile">
+              , <br />
+              you can try it out!</span
+            >
+          </p>
         </div>
         <div class="footer-center">
           <img
